@@ -1,0 +1,321 @@
+<?xml version="1.0"?>
+<root>
+<list>
+    <item>
+        <name>Airy Configuration</name>
+        <item>
+            <name>Config</name>
+            <item>
+                <name>Terminal And Vim Setting</name>
+                <identifier>private.app_in_terminal_settings</identifier>
+                <only>TERMINAL</only>
+                <autogen>__KeyOverlaidModifier__ KeyCode::JIS_KANA, KeyCode::VK_MODIFIER_EXTRA1, KeyCode::JIS_KANA</autogen>
+                <autogen>__KeyOverlaidModifier__ KeyCode::JIS_EISUU, KeyCode::VK_MODIFIER_EXTRA2, KeyCode::JIS_EISUU</autogen>
+                <autogen>__KeyToKey__ <!-- Bracket Snippet -->
+                    KeyCode::SEMICOLON, ModifierFlag::EXTRA1 | ModifierFlag::EXTRA2,
+                    KeyCode::JIS_BRACKET_LEFT, ModifierFlag::SHIFT_L, KeyCode::JIS_BRACKET_RIGHT, ModifierFlag::SHIFT_L, KeyCode::CURSOR_LEFT, KeyCode::ENTER, KeyCode::ENTER, KeyCode::CURSOR_UP, KeyCode::TAB
+                </autogen>
+                <autogen>__KeyToKey__ <!-- In InsertMode: delete word block, In NormalMode: split window move modifier -->
+                    KeyCode::R, ModifierFlag::EXTRA1,
+                    KeyCode::W, ModifierFlag::CONTROL_L
+                </autogen>
+                <autogen>__KeyToKey__ <!-- Redo -->
+                    KeyCode::H, ModifierFlag::EXTRA1,
+                    KeyCode::R, ModifierFlag::CONTROL_L
+                </autogen>
+                <autogen>__KeyToKey__ <!-- Scroll Up Editor Window -->
+                    KeyCode::G, ModifierFlag::EXTRA1,
+                    KeyCode::B, ModifierFlag::CONTROL_L
+                </autogen>
+                <autogen>__KeyToKey__ <!-- Scroll Down Editor Window -->
+                    KeyCode::V, ModifierFlag::EXTRA1,
+                    KeyCode::F, ModifierFlag::CONTROL_L
+                </autogen>
+                <autogen>__KeyToKey__ <!-- In Terminal: exit, In Vim: mini scroll down -->
+                    KeyCode::C, ModifierFlag::EXTRA1,
+                    KeyCode::D, ModifierFlag::CONTROL_L
+                </autogen>
+                <autogen>__KeyToKey__ <!-- Quit -->
+                    KeyCode::C, ModifierFlag::EXTRA2,
+                    KeyCode::C, ModifierFlag::CONTROL_L
+                </autogen>
+                <autogen>__KeyToKey__ <!-- Enter Visual Block Mode -->
+                    KeyCode::B, ModifierFlag::EXTRA2,
+                    KeyCode::V, ModifierFlag::CONTROL_L
+                </autogen>
+                <autogen>__KeyToKey__ <!-- For Unite Prefix -->
+                    KeyCode::U, ModifierFlag::EXTRA1,
+                    KeyCode::U, ModifierFlag::CONTROL_L
+                </autogen>
+            </item>
+        </item>
+        <item>
+            <name>Zenisyns</name>
+            <item>
+                <name>SX_XR1</name>
+                <identifier>private.xr1</identifier>
+                <autogen>__DoublePressModifier__
+                    KeyCode::COMMAND_R, KeyCode::COMMAND_R,
+                    KeyCode::ESCAPE, KeyCode::JIS_EISUU
+                </autogen>
+                <autogen>__KeyOverlaidModifier__ KeyCode::JIS_KANA, KeyCode::VK_MODIFIER_EXTRA1, KeyCode::JIS_KANA</autogen>
+                <autogen>__KeyToKey__ <!-- I -> PAGETOP -->
+                    KeyCode::I, ModifierFlag::EXTRA1,
+                    KeyCode::HOME
+                </autogen>
+                <autogen>__KeyToKey__ <!-- ; -> ENTER -->
+                    KeyCode::SEMICOLON, ModifierFlag::EXTRA1,
+                    KeyCode::RETURN
+                </autogen>
+                <autogen>__KeyToKey__ <!-- SPACE -> BACKSPACE -->
+                    KeyCode::SPACE, ModifierFlag::EXTRA1,
+                    KeyCode::DELETE
+                </autogen>
+                <autogen>__KeyToKey__ <!-- : -> TAB -->
+                    KeyCode::JIS_COLON, ModifierFlag::EXTRA1,
+                    KeyCode::TAB
+                </autogen>
+                <!-- CURSOL MOVE -->
+                <autogen>__KeyToKey__ KeyCode::S, ModifierFlag::EXTRA1, KeyCode::CURSOR_LEFT</autogen>
+                <autogen>__KeyToKey__ KeyCode::F, ModifierFlag::EXTRA1, KeyCode::CURSOR_RIGHT</autogen>
+                <autogen>__KeyToKey__ KeyCode::E, ModifierFlag::EXTRA1, KeyCode::CURSOR_UP</autogen>
+                <autogen>__KeyToKey__ KeyCode::D, ModifierFlag::EXTRA1, KeyCode::CURSOR_DOWN</autogen>
+                <autogen>__KeyToKey__ <!--  J -> : -->
+                    KeyCode::J, ModifierFlag::EXTRA1,
+                    KeyCode::JIS_COLON
+                </autogen>
+                <autogen>__KeyToKey__ <!-- K -> - -->
+                    KeyCode::K, ModifierFlag::EXTRA1,
+                    KeyCode::MINUS
+                </autogen>
+                <autogen>__KeyToKey__ <!-- A -> & -->
+                    KeyCode::A, ModifierFlag::EXTRA1,
+                    KeyCode::KEY_6, ModifierFlag::SHIFT_L
+                </autogen>
+                <autogen>__KeyToKey__ <!-- P -> \ -->
+                    KeyCode::P, ModifierFlag::EXTRA1,
+                    KeyCode::JIS_YEN
+                </autogen>
+                <autogen>__KeyToKey__ <!-- L -> _ -->
+                    KeyCode::L, ModifierFlag::EXTRA1,
+                    KeyCode::JIS_UNDERSCORE
+                </autogen>
+                <autogen>__KeyToKey__ <!-- M -> $ -->
+                    KeyCode::M, ModifierFlag::EXTRA1,
+                    KeyCode::KEY_4, ModifierFlag::SHIFT_L
+                </autogen>
+                <autogen>__KeyToKey__ <!-- N -> ^ -->
+                    KeyCode::N, ModifierFlag::EXTRA1,
+                    KeyCode::JIS_HAT
+                </autogen>
+                <autogen>__KeyToKey__ <!-- B -> % -->
+                    KeyCode::B, ModifierFlag::EXTRA1,
+                    KeyCode::KEY_5, ModifierFlag::SHIFT_L
+                </autogen>
+                <autogen>__KeyToKey__ <!-- O -> @ -->
+                    KeyCode::O, ModifierFlag::EXTRA1,
+                    KeyCode::JIS_ATMARK
+                </autogen>
+            </item>
+            <item>
+                <name>SX_XL1</name>
+                <identifier>private.xl1</identifier>
+                <autogen>--KeyOverlaidModifier-- KeyCode::JIS_EISUU, KeyCode::VK_MODIFIER_EXTRA2, KeyCode::JIS_EISUU</autogen>
+                <autogen>__KeyToKey__ <!-- SPACE -> DELETE -->
+                    KeyCode::SPACE, ModifierFlag::EXTRA2,
+                    KeyCode::FORWARD_DELETE
+                </autogen>
+                <autogen>__KeyToKey__ <!-- V -> SCROLLUP -->
+                    KeyCode::V, ModifierFlag::EXTRA2,
+                    KeyCode::VK_MOUSEKEY_SCROLL_UP
+                </autogen>
+                <autogen>__KeyToKey__ <!-- G -> SCROLLDOWN -->
+                    KeyCode::G, ModifierFlag::EXTRA2,
+                    KeyCode::VK_MOUSEKEY_SCROLL_DOWN
+                </autogen>
+                <!-- {}[] -->
+                <autogen>__KeyToKey__ KeyCode::K, ModifierFlag::EXTRA2, KeyCode::JIS_BRACKET_LEFT</autogen>
+                <autogen>__KeyToKey__ KeyCode::L, ModifierFlag::EXTRA2, KeyCode::JIS_BRACKET_RIGHT</autogen>
+                <!-- ()<> -->
+                <autogen>__KeyToKey__ KeyCode::J, ModifierFlag::EXTRA2 | ModifierFlag::SHIFT_L, KeyCode::COMMA, ModifierFlag::SHIFT_L</autogen>
+                <autogen>__KeyToKey__ KeyCode::I, ModifierFlag::EXTRA2 | ModifierFlag::SHIFT_L, KeyCode::DOT, ModifierFlag::SHIFT_L</autogen>
+                <autogen>__KeyToKey__ KeyCode::J, ModifierFlag::EXTRA2, KeyCode::KEY_8, ModifierFlag::SHIFT_L</autogen>
+                <autogen>__KeyToKey__ KeyCode::I, ModifierFlag::EXTRA2, KeyCode::KEY_9, ModifierFlag::SHIFT_L</autogen>
+                <autogen>__KeyToKey__ <!-- M -> + -->
+                    KeyCode::M, ModifierFlag::EXTRA2,
+                    KeyCode::SEMICOLON, ModifierFlag::SHIFT_L
+                </autogen>
+                <autogen>__KeyToKey__ <!-- P -> * -->
+                    KeyCode::P, ModifierFlag::EXTRA2,
+                    KeyCode::JIS_COLON, ModifierFlag::SHIFT_L
+                </autogen>
+                <autogen>__KeyToKey__ <!-- O -> ! -->
+                    KeyCode::O, ModifierFlag::EXTRA2,
+                    KeyCode::KEY_1, ModifierFlag::SHIFT_L
+                </autogen>
+                <autogen>__KeyToKey__ <!-- ; -> = -->
+                    KeyCode::SEMICOLON, ModifierFlag::EXTRA2,
+                    KeyCode::MINUS, ModifierFlag::SHIFT_L
+                </autogen>
+                <autogen>__KeyToKey__ <!-- H -> " -->
+                    KeyCode::H, ModifierFlag::EXTRA2,
+                    KeyCode::KEY_2, ModifierFlag::SHIFT_L
+                </autogen>
+                <autogen>__KeyToKey__ <!-- N -> ' -->
+                    KeyCode::N, ModifierFlag::EXTRA2,
+                    KeyCode::KEY_7, ModifierFlag::SHIFT_L
+                </autogen>
+                <autogen>__KeyToKey__ <!-- A -> , -->
+                    KeyCode::A, ModifierFlag::EXTRA2,
+                    KeyCode::COMMA
+                </autogen>
+                <autogen>__KeyToKey__ <!-- S -> # -->
+                    KeyCode::S, ModifierFlag::EXTRA2,
+                    KeyCode::KEY_3, ModifierFlag::SHIFT_L
+                </autogen>
+                <autogen>__KeyToKey__ <!-- D -> . -->
+                    KeyCode::D, ModifierFlag::EXTRA2,
+                    KeyCode::DOT
+                </autogen>
+                <autogen>__KeyToKey__ <!-- F -> / -->
+                    KeyCode::F, ModifierFlag::EXTRA2,
+                    KeyCode::SLASH
+                </autogen>
+                <autogen>__KeyToKey__ <!-- Emmet Plugin Execute  -->
+                    KeyCode::E, ModifierFlag::EXTRA2,
+                    KeyCode::E, ModifierFlag::CONTROL_L
+                </autogen>
+                <!-- Function Keys -->
+                <autogen>__KeyToKey__ KeyCode::KEY_1, ModifierFlag::EXTRA2, KeyCode::F1</autogen>
+                <autogen>__KeyToKey__ KeyCode::KEY_2, ModifierFlag::EXTRA2, KeyCode::F2</autogen>
+                <autogen>__KeyToKey__ KeyCode::KEY_3, ModifierFlag::EXTRA2, KeyCode::F3</autogen>
+                <autogen>__KeyToKey__ KeyCode::KEY_4, ModifierFlag::EXTRA2, KeyCode::F4</autogen>
+                <autogen>__KeyToKey__ KeyCode::KEY_5, ModifierFlag::EXTRA2, KeyCode::F5</autogen>
+                <autogen>__KeyToKey__ KeyCode::KEY_6, ModifierFlag::EXTRA2, KeyCode::F6</autogen>
+                <autogen>__KeyToKey__ KeyCode::KEY_7, ModifierFlag::EXTRA2, KeyCode::F7</autogen>
+                <autogen>__KeyToKey__ KeyCode::KEY_8, ModifierFlag::EXTRA2, KeyCode::F8</autogen>
+                <autogen>__KeyToKey__ KeyCode::KEY_9, ModifierFlag::EXTRA2, KeyCode::F9</autogen>
+                <autogen>__KeyToKey__ KeyCode::KEY_0, ModifierFlag::EXTRA2, KeyCode::F10</autogen>
+                <autogen>__KeyToKey__ KeyCode::MINUS, ModifierFlag::EXTRA2, KeyCode::F11</autogen>
+                <autogen>__KeyToKey__ KeyCode::JIS_HAT, ModifierFlag::EXTRA2, KeyCode::F12</autogen>
+            </item>
+            <item>
+                <name>HHKb</name>
+                <identifier>private.hhkb</identifier>
+                <!-- Replace each other Ctr & Cmd -->
+                <autogen>__KeyToKey__ KeyCode::CONTROL_L, KeyCode::COMMAND_L</autogen>
+                <autogen>__KeyToKey__ KeyCode::COMMAND_L, KeyCode::CONTROL_L</autogen>
+            </item>
+            <item>
+                <name>SX_XR2</name>
+                <identifier>private.xr2</identifier>
+                <!-- Numbers -->
+                <autogen>__KeyToKey__ KeyCode::COMMA, ModifierFlag::COMMAND_R, KeyCode::KEY_1</autogen>
+                <autogen>__KeyToKey__ KeyCode::DOT, ModifierFlag::COMMAND_R, KeyCode::KEY_2</autogen>
+                <autogen>__KeyToKey__ KeyCode::SLASH, ModifierFlag::COMMAND_R, KeyCode::KEY_3</autogen>
+                <autogen>__KeyToKey__ KeyCode::K, ModifierFlag::COMMAND_R, KeyCode::KEY_4</autogen>
+                <autogen>__KeyToKey__ KeyCode::L, ModifierFlag::COMMAND_R, KeyCode::KEY_5</autogen>
+                <autogen>__KeyToKey__ KeyCode::SEMICOLON, ModifierFlag::COMMAND_R, KeyCode::KEY_6</autogen>
+                <autogen>__KeyToKey__ KeyCode::I, ModifierFlag::COMMAND_R, KeyCode::KEY_7</autogen>
+                <autogen>__KeyToKey__ KeyCode::O, ModifierFlag::COMMAND_R, KeyCode::KEY_8</autogen>
+                <autogen>__KeyToKey__ KeyCode::P, ModifierFlag::COMMAND_R, KeyCode::KEY_9</autogen>
+                <autogen>__KeyToKey__ KeyCode::M, ModifierFlag::COMMAND_R, KeyCode::KEY_0</autogen>
+                <autogen>__KeyToKey__ KeyCode::SPACE, ModifierFlag::COMMAND_R, KeyCode::DELETE</autogen>
+            </item>
+            <item>
+                <name>SX Layout</name>
+                <identifier>private.sx_layout_normal</identifier>
+                <!-- Optimized Key Layouts Style -->
+                <autogen>__KeyToKey__ KeyCode::A, KeyCode::O</autogen>
+                <autogen>__KeyToKey__ KeyCode::B, KeyCode::JIS_ATMARK</autogen>
+                <autogen>__KeyToKey__ KeyCode::C, KeyCode::K</autogen>
+                <autogen>__KeyToKey__ KeyCode::D, KeyCode::E</autogen>
+                <autogen>__KeyToKey__ KeyCode::E, KeyCode::L</autogen>
+                <autogen>__KeyToKey__ KeyCode::F, KeyCode::A</autogen>
+                <autogen>__KeyToKey__ KeyCode::G, KeyCode::F</autogen>
+                <autogen>__KeyToKey__ KeyCode::H, KeyCode::B</autogen>
+                <autogen>__KeyToKey__ KeyCode::I, KeyCode::H</autogen>
+                <autogen>__KeyToKey__ KeyCode::J, KeyCode::T</autogen>
+                <autogen>__KeyToKey__ KeyCode::K, KeyCode::R</autogen>
+                <autogen>__KeyToKey__ KeyCode::L, KeyCode::N</autogen>
+                <autogen>__KeyToKey__ KeyCode::M, KeyCode::M</autogen>
+                <autogen>__KeyToKey__ KeyCode::N, KeyCode::D</autogen>
+                <autogen>__KeyToKey__ KeyCode::O, KeyCode::C</autogen>
+                <autogen>__KeyToKey__ KeyCode::P, KeyCode::Y</autogen>
+                <autogen>__KeyToKey__ KeyCode::Q, KeyCode::X</autogen>
+                <autogen>__KeyToKey__ KeyCode::R, KeyCode::Z</autogen>
+                <autogen>__KeyToKey__ KeyCode::S, KeyCode::I</autogen>
+                <autogen>__KeyToKey__ KeyCode::T, KeyCode::J</autogen>
+                <autogen>__KeyToKey__ KeyCode::U, KeyCode::G</autogen>
+                <autogen>__KeyToKey__ KeyCode::V, KeyCode::U</autogen>
+                <autogen>__KeyToKey__ KeyCode::W, KeyCode::W</autogen>
+                <autogen>__KeyToKey__ KeyCode::X, KeyCode::DOT</autogen>
+                <autogen>__KeyToKey__ KeyCode::Y, KeyCode::Q</autogen>
+                <autogen>__KeyToKey__ KeyCode::Z, KeyCode::SEMICOLON</autogen>
+                <autogen>__KeyToKey__ KeyCode::SEMICOLON, KeyCode::S</autogen>
+                <autogen>__KeyToKey__ KeyCode::DOT, KeyCode::V</autogen>
+                <autogen>__KeyToKey__ KeyCode::COMMA, KeyCode::P</autogen>
+                <autogen>__KeyToKey__ KeyCode::JIS_ATMARK, KeyCode::SLASH</autogen>
+                <autogen>__KeyToKey__ KeyCode::JIS_COLON, KeyCode::MINUS</autogen>
+                <autogen>__KeyToKey__ KeyCode::SLASH, KeyCode::COMMA</autogen>
+            </item>
+        </item>
+        <item>
+            <name>Mouse Keys</name>
+            <item>
+                <name>Simultaneous Key Presses XL1 + XR1</name>
+                <identifier vk_config="true">notsave.private.mousekeys_mode</identifier>
+                <!-- Scroll -->
+                <autogen>__KeyToKey__ KeyCode::F, ModifierFlag::FN, KeyCode::VK_MOUSEKEY_SCROLL_LEFT,  ModifierFlag::FN</autogen>
+                <autogen>__KeyToKey__ KeyCode::E, ModifierFlag::FN, KeyCode::VK_MOUSEKEY_SCROLL_DOWN,  ModifierFlag::FN</autogen>
+                <autogen>__KeyToKey__ KeyCode::D, ModifierFlag::FN, KeyCode::VK_MOUSEKEY_SCROLL_UP,    ModifierFlag::FN</autogen>
+                <autogen>__KeyToKey__ KeyCode::S, ModifierFlag::FN, KeyCode::VK_MOUSEKEY_SCROLL_RIGHT, ModifierFlag::FN</autogen>
+                <!-- Mouse Pointer Motion -->
+                <autogen>__KeyToKey__ KeyCode::S, KeyCode::VK_MOUSEKEY_LEFT</autogen>
+                <autogen>__KeyToKey__ KeyCode::D, KeyCode::VK_MOUSEKEY_DOWN</autogen>
+                <autogen>__KeyToKey__ KeyCode::E, KeyCode::VK_MOUSEKEY_UP</autogen>
+                <autogen>__KeyToKey__ KeyCode::F, KeyCode::VK_MOUSEKEY_RIGHT</autogen>
+                <!-- Mouse Click -->
+                <block>
+                    <config_only>private.mousekeys_mode_commandL2leftclick</config_only>
+                    <autogen>__KeyToPointingButton__ KeyCode::A, PointingButton::LEFT</autogen>
+                </block>
+                <block>
+                    <config_only>private.mousekeys_mode_space2middleclick</config_only>
+                    <autogen>__KeyToPointingButton__ KeyCode::R, PointingButton::MIDDLE</autogen>
+                </block>
+                <block>
+                    <config_only>private.mousekeys_mode_commandR2rightclick</config_only>
+                    <autogen>__KeyToPointingButton__ KeyCode::W, PointingButton::RIGHT</autogen>
+                </block>
+                <!-- Scroll & Mouse Motion Option -->
+                <block>
+                    <config_only>private.simultaneouskeypresses_mouse_keys_mode_ds_strict_key_order</config_only>
+                    <!-- Scroll Modifier to K -->
+                    <autogen>__KeyToKey__ KeyCode::K, KeyCode::FN</autogen>
+                    <!-- High Speed Mouse Move -->
+                    <autogen>__KeyToKey__ KeyCode::J, KeyCode::VK_MOUSEKEY_HIGHSPEED</autogen>
+                </block>
+            </item>
+            <item>
+                <name>Pointer Move</name>
+                <identifier>private.simultaneouskeypresses_mouse_keys_mode_ds_strict_key_order</identifier>
+                <!-- Commit Mouse Mode -->
+                <autogen>__SimultaneousKeyPresses__ KeyCode::JIS_EISUU, KeyCode::F, KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_mousekeys_mode</autogen>
+            </item>
+            <item>
+                <name>Left Click</name>
+                <identifier>private.mousekeys_mode_commandL2leftclick</identifier>
+            </item>
+            <item>
+                <name>Middle Click</name>
+                <identifier>private.mousekeys_mode_space2middleclick</identifier>
+            </item>
+            <item>
+                <name>Right Click</name>
+                <identifier>private.mousekeys_mode_commandR2rightclick</identifier>
+            </item>
+        </item>
+    </item>
+</list>
+</root>
