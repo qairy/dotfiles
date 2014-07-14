@@ -2,9 +2,9 @@
 export LANG=ja_JP.UTF-8
 
 # Add RVM to PATH for scripting
-PATH=$PATH:$HOME/.rvm/bin
-[ -s ${HOME}/.rvm/scripts/rvm ] && source ${HOME}/.rvm/scripts/rvm
-eval "$(rbenv init -)"
+#PATH=$PATH:$HOME/.rvm/bin
+#[ -s ${HOME}/.rvm/scripts/rvm ] && source ${HOME}/.rvm/scripts/rvm
+#eval "$(rbenv init -)"
 
 alias la='ls -a'
 alias ls='ls -G'
